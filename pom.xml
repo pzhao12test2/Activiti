@@ -13,6 +13,11 @@
   <version>7-201710-EA-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <properties>
+    <version.activiti>7-201710-EA-SNAPSHOT</version.activiti>
+  <gib.referenceBranch>HEAD^1</gib.referenceBranch>
+        <gib.enabled>true</gib.enabled>
+    </properties>
 
   <distributionManagement>
     <repository>
@@ -49,7 +54,7 @@
       <dependency>
         <groupId>org.activiti</groupId>
         <artifactId>activiti-dependencies</artifactId>
-        <version>7-201710-EA-SNAPSHOT</version>
+        <version>${version.activiti}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -152,9 +157,5 @@
             </extension>
         </extensions>
     </build>
-    <properties>
-        <gib.referenceBranch>HEAD^1</gib.referenceBranch>
-        <gib.enabled>true</gib.enabled>
-    </properties>
 </project>
 
